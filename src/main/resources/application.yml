@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    # default to H2 in-memory database created by JPA
+    url: jdbc:h2:mem:test;MODE=PostgreSQL;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+  jpa.hibernate.ddl-auto: create-drop
+flyway.enabled: false
+
+# Jwt settings (be sure to change this)
+jwt.secret: abcefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
